@@ -155,6 +155,10 @@ function getSessionCookieTokenFromReq(req) {
   return readCookieValue(req, SESSION_COOKIE_NAME);
 }
 
+app.get("/", (req, res) => {
+  res.json({ message: "Mirabellier backend is running" });
+});
+
 function registerMiddlewares(app) {
   app.use(createCompressionMiddleware());
   app.use(keepAliveMiddleware);
