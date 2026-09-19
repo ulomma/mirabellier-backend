@@ -284,4 +284,29 @@ The Node.js backend was successfully deployed to AWS EC2 and configured to run c
 
 ## Deployment Evidence
 
-Screenshots below document the deployment and configuration process.
+### 1. Node.js Backend Running with PM2
+
+Node.js backend running continuously with PM2 on AWS EC2.
+
+![Node.js backend running with PM2 and Nginx reverse proxy running](deployment%20pic1.jpeg)
+
+### 2. UFW Firewall Configuration
+
+UFW was configured to allow the required network traffic for SSH, HTTP, and HTTPS.
+
+![UFW firewall configuration](deployment%20pic2.jpeg)
+
+### 3. Public HTTPS Deployment
+
+The deployed Node.js backend was successfully accessed through a public HTTPS endpoint.
+
+![Node.js backend accessible through HTTPS](deployment%20pic3.jpeg)
+
+### 4. GitHub Repository
+
+The source code for the deployed backend is maintained in my GitHub repository.
+
+![Mirabellier backend GitHub repository](deployment%20pic4.jpeg)
+
+
+
