@@ -237,3 +237,51 @@ If `PORT` is missing, `app.js` falls back to `5000`.
 
 I wanted the backend to stay understandable while still doing real app work.
 Soft attitude, practical behavior, and sturdy enough to keep adding new little features without turning into spaghetti.
+
+# My Deployment
+
+I deployed this Node.js backend application to an AWS EC2 Ubuntu server and configured it for continuous operation and secure public access.
+
+## Deployment Stack
+
+- **Backend:** Node.js / Express
+- **Server:** AWS EC2
+- **Operating System:** Ubuntu Linux
+- **Process Manager:** PM2
+- **Web Server / Reverse Proxy:** Nginx
+- **Firewall:** UFW
+- **HTTPS:** SSL/TLS
+
+## Deployment Process
+
+1. Cloned the backend repository onto an AWS EC2 server.
+2. Installed the required Node.js dependencies.
+3. Configured the application to run on port `3000`.
+4. Used PM2 to keep the application running continuously.
+5. Configured Nginx as a reverse proxy.
+6. Configured UFW to control server access.
+7. Configured HTTPS for secure public access.
+8. Tested the deployed backend through its public endpoint.
+
+## Architecture
+
+Client → HTTPS → Nginx → PM2 → Node.js / Express
+
+## What I Practiced
+
+- AWS EC2 deployment
+- Linux server administration
+- Node.js backend deployment
+- PM2 process management
+- Nginx reverse proxy configuration
+- UFW firewall configuration
+- HTTPS configuration
+- Public API testing
+
+## Deployment Outcome
+
+The Node.js backend was successfully deployed to AWS EC2 and configured to run continuously behind Nginx with HTTPS enabled.
+
+## Deployment Evidence
+
+Screenshots below document the deployment and configuration process.
